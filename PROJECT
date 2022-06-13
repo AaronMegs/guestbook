@@ -1,0 +1,21 @@
+domain: aaronmegs.com
+layout:
+- go.kubebuilder.io/v3
+projectName: guestbook
+repo: aaronmegs.com/guestbook
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: aaronmegs.com
+  group: webapp
+  kind: Guestbook
+  path: aaronmegs.com/guestbook/api/v1
+  version: v1
+- controller: true
+  domain: aaronmegs.com
+  group: region-k8s
+  kind: Node
+  version: v1alpha1
+version: "3"
